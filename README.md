@@ -6,11 +6,10 @@ Tasks for the course Linux II
 08 challenge project brief · MD
 # Challenge Track — Project Brief
  
-**IT-2xx Linux Server Administration and Infrastructure Automation**
-**Task title:** Reproducible hardened environment, extended
+** Linux Server Administration and Infrastructure Automation**
+**Task title:** Reproducible hardened environment
 **Issued:** Week 2, on passing the qualifying gate
-**Due:** 23:59 the Sunday before Week 15
-**Weight:** 45% of the course grade
+**Due:** 23:59  of the last day of September 2026
 **Work mode:** individual — pairs are not permitted on this track
  
 This is the complete specification. Everything you are graded on is stated here. If a requirement below is ambiguous, ask before Week 10; ambiguity resolved after Week 13 will be resolved in the grader's favour.
@@ -27,7 +26,7 @@ Build a four-node Linux environment on a cloud provider, entirely from code, and
  
 | | |
 |---|---|
-| Provider | Oracle Cloud Always Free, AWS Free Tier, Hetzner Cloud, or a department Proxmox instance. Choose one by Week 5 and record it in ADR-01. |
+| Provider | Oracle Cloud Always Free, AWS Free Tier, Hetzner Cloud,Proxmox instance, worst case scenario use WSL. Choose one  and record it in ADR-01. |
 | Base images | Ubuntu Server 24.04 LTS and Rocky Linux 9. **At least one node must run each family.** |
 | Provisioning | Terraform ≥ 1.7 |
 | Configuration | cloud-init and Ansible. `remote-exec` and `local-exec` provisioners are prohibited. |
