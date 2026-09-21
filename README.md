@@ -7,10 +7,10 @@ sudo nano /usr/local/bin/disk-report.sh
 
 Students write the following contents exactly:
 
-bash
-#!/bin/bash
-echo "=== $(date --iso-8601=seconds) ===" >> /var/log/disk-report.log
-df -h / >> /var/log/disk-report.log
+  bash
+  #!/bin/bash
+  echo "=== $(date --iso-8601=seconds) ===" >> /var/log/disk-report.log
+  df -h / >> /var/log/disk-report.log
 
 Then make it executable:
 
@@ -20,8 +20,8 @@ sudo chmod 755 /usr/local/bin/disk-report.sh
 Test it by hand as root first:
 
 bash
-sudo /usr/local/bin/disk-report.sh
-cat /var/log/disk-report.log
+  "sudo /usr/local/bin/disk-report.sh
+  cat /var/log/disk-report.log"
 
 "It works as root. Good. Now the question: why would we not just run it as root?"
 
