@@ -6,11 +6,14 @@ Part 1 — paper (30 min, no calculators). Ten problems: given an address and pr
 Part 2 — the lab's addressing plan (20 min). Each student writes the plan they will use for the rest of the course and commits it to their repo:
 
 Segment	VirtualBox network	IPv4	IPv6 (ULA)	Members
+
 Management	Host-only vboxnet0	192.168.56.0/24	—	Windows host .1, ubuntu .10, rocky .11, router .12
+
 LAN A	Internal labnet-a	10.10.10.0/24	fd00:10::/64	router .1, ubuntu .20
+
 LAN B	Internal labnet-b	10.10.20.0/24	fd00:20::/64	router .1, rocky .20
 
-This table is referenced in Weeks 5, 7, 8, and the final project. Getting it written and committed now saves a great deal of confusion later.
+
 
 Lab 4.B — Static addressing on both families
 
@@ -18,6 +21,7 @@ Tasks.
 
 Power off VMs. Add Adapter 3 as Internal Network labnet-a on the Ubuntu VM, labnet-b on the Rocky VM.
 Ubuntu, Netplan. /etc/netplan/01-lab.yaml:
+
 yaml
    network:
      version: 2
@@ -26,6 +30,7 @@ yaml
        enp0s8: {addresses: [192.168.56.10/24]}
        enp0s9:
          addresses: [10.10.10.20/24, "fd00:10::20/64"]
+
 
 sudo netplan try first — it auto-reverts after 120 seconds if you do not confirm, which is the correct habit for remote network changes and directly foreshadows the Week 7 lockout lesson. Then netplan apply. 3. Rocky, nmcli.
 
