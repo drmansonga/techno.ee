@@ -33,9 +33,9 @@ This lab is designed for a Linux environment containing at least:
 - a VM that is intentionally bloated and insecure
 - a second VM or host to test SSH access
 - a router VM used for bastion-style access
-- Ubuntu 24.04 and/or Rocky Linux 9 systems as appropriate
+- Ubuntu 24.04 or Rocky Linux 9 systems as appropriate
 
-The instructor may provide an intentionally bloated VM, or you may be expected to build one yourself.
+ You expected to build  yourself an intentionally bloated VM
 
 ---
 
