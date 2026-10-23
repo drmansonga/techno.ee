@@ -80,7 +80,7 @@ This is required evidence and will be used as the baseline before remediation.
 
 ## Step 2: Remove unnecessary services and packages
 
-Your instructor provides, or you create, a deliberately bloated VM. It may include:
+You create, a deliberately bloated VM. It may include:
 
 - a desktop environment
 - Samba
